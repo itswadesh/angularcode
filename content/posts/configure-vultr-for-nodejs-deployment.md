@@ -1,13 +1,16 @@
 ---
 title: Configure Vultr for Nodejs Deployment
-date: 2020-02-01
+date: 2020-02-01T00:00:00.000Z
 published: true
-tags: ['nodejs', 'vultr', 'pm2', 'nginx']
-series: false
-cover_image: ./images/vultr.webp
-canonical_url: false
-description: "How to setup and deploy nodejs application for production to ubuntu cloud.
-We will be using Vultr for this deployment."
+description: >-
+  How to setup and deploy nodejs application for production to ubuntu cloud. We
+  will be using Vultr for this deployment.
+tags:
+  - nodejs
+  - vultr
+  - pm2
+  - nginx
+cover_image: /uploads/vultr.webp
 ---
 
 I finished building my NodeJS app. Next step is to deploy it to some cloud server.
