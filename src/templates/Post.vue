@@ -4,6 +4,38 @@
       <h1 class="post-title__text">{{ $page.post.title }}</h1>
       <PostMeta :post="$page.post" />
     </div>
+    <social-sharing
+      :url="`https://www.angularcode.com/${$page.post.path}`"
+      :title="$page.post.title"
+      :description="$page.post.description"
+      :quote="$page.post.description"
+      hashtags="serverless,nodejs,vuejs,pm2,nginx"
+      twitter-user="itswadesh"
+      inline-template
+    >
+      <div class="fx justify-between items-center cursor-pointer">
+        <network network="facebook" style="color:#3B5998" class="w-full">
+          <div class="bg-gray-200 py-2 text-center text-xs">
+            <i class="fa fa-fw fa-facebook" />Facebook
+          </div>
+        </network>
+        <network network="reddit" style="color:#ff4500" class="w-full">
+          <div class="bg-gray-200 py-2 text-center text-xs">
+            <i class="fa fa-fw fa-reddit" />Reddit
+          </div>
+        </network>
+        <network network="twitter" style="color:#53A8E7" class="w-full">
+          <div class="bg-gray-200 py-2 text-center text-xs">
+            <i class="fa fa-fw fa-twitter" />Twitter
+          </div>
+        </network>
+        <network network="whatsapp" style="color:#54CC61" class="w-full">
+          <div class="bg-gray-200 py-2 text-center text-xs">
+            <i class="fa fa-fw fa-whatsapp" />Whatsapp
+          </div>
+        </network>
+      </div>
+    </social-sharing>
     <div class="grid" style="margin:0 auto;max-width: 1195px;">
       <div class="post content-box container">
         <div class="post__header">
@@ -36,13 +68,15 @@ import PostMeta from "~/components/PostMeta";
 import PostTags from "~/components/PostTags";
 import Author from "~/components/Author.vue";
 import RightSidebar from "~/components/RightSidebar.vue";
+import SocialSharing from "vue-social-sharing";
 
 export default {
   components: {
     Author,
     PostMeta,
     PostTags,
-    RightSidebar
+    RightSidebar,
+    SocialSharing
   },
   metaInfo() {
     return {
@@ -63,6 +97,11 @@ export default {
           key: "og:description",
           property: "og:description",
           content: this.$page.post.description
+        },
+        {
+          key: "og:image",
+          property: "og:image",
+          content: this.$page.post.cover_image
         }
       ]
     };
@@ -90,6 +129,27 @@ query Post ($id: ID!) {
 </page-query>
 
 <style lang="scss">
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.py-2 {
+  padding: 1rem 0;
+}
+.text-center {
+  text-align: center;
+}
+.bg-gray-200:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.w-full {
+  width: 25%;
+}
 .grid {
   display: flex;
   // grid-gap: 10px;
