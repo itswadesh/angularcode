@@ -1,9 +1,13 @@
 <template>
   <Layout :show-logo="false">
+    <div class="fx notification">
+      <h1>Subscription successful</h1>
+    </div>
     <!-- Author intro -->
     <Author :show-title="true" />
+
+    <!-- List posts -->
     <div class="fx center">
-      <!-- List posts -->
       <div class="posts">
         <PostCard
           v-for="edge in $page.posts.edges"
@@ -14,6 +18,7 @@
       <!-- <RightSidebar /> -->
     </div>
   </Layout>
+  <!-- filter: { published: { eq: true }} -->
 </template>
 
 <page-query>
@@ -51,29 +56,8 @@ export default {
     RightSidebar
   },
   metaInfo: {
-    title: "Latest web technology tutorials with working examples",
-    meta: [
-      { name: "author", content: "Swadesh Behera" },
-      {
-        key: "description",
-        name: "description",
-        content:
-          "Latest tutorials in web technology with live URL and working code at github"
-      },
-      {
-        property: "og:title",
-        content: "Latest web technology tutorials with working examples"
-      },
-      {
-        property: "og:image",
-        content: "https://www.angularcode.com/mobile-app-development.jpg"
-      },
-      {
-        property: "og:description",
-        content:
-          "Latest tutorials in web technology with live URL and working code at github"
-      }
-    ]
+    title: "Angularcode - Latest web technology tutorials with working examples"
   }
 };
 </script>
+<style></style>

@@ -1,0 +1,108 @@
+// Default
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--body-color);
+    transition: color .6s, background-color .6s;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin:0;
+    padding:0;
+    line-height: 1.5;
+}
+table td{
+ 	padding: 6px 12px;
+    border: 1px solid #e3ecf3;
+}
+table th{
+	padding: 6px 12px;
+	border: 1px solid #e3ecf3;
+	background-color: #f4f8fb;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.button{
+    text-align: center;
+    display: inline-block;
+    padding: .75rem .5rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    margin-bottom: .75rem;
+    font-weight: 500;
+    border-radius: .25rem;
+}
+.button:hover{
+    text-decoration: none;
+}
+.green{
+    background-color: #00c58e;
+    color: #fff;
+}
+.notification{
+    padding:2rem;
+    margin:1rem;
+    background:lightgreen;
+    color:#333333;
+    justify-content: center;
+}
+.center{
+    justify-content: center;
+}
+// .button{
+// 	padding:10px;
+// 	margin:20px;
+// 	border:1px dashed #333;
+// 	border-radius:10px;
+// 	text-decoration: none;
+// &:hover {
+// 	opacity: .8;background-color: #eee;
+// }
+// }
+.fx{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+a {
+	color: var(--link-color);
+ 	transition: opacity .2s;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.github{
+	margin: 20px 0px;
+    background: #f2f2f2 url(https://github.githubassets.com/images/modules/logos_page/Octocat.png) no-repeat 20px 50%;
+    font-weight: bold;
+    background-size: 74px;
+    border: solid 1px #dedede;
+    border-radius: 5px;
+    clear: both;
+}
+.github a {
+    display: block;
+    padding: 20px 20px 20px 100px;
+    text-decoration: none !important;
+}
+.github b {
+    display: block;
+    color: #333333;
+    text-decoration: none !important;
+}

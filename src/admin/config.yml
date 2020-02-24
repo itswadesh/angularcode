@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your_name/repo_name
+  repo: itswadesh/angularcode
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
