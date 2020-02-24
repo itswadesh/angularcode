@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-
     <header class="header">
       <div class="header__left">
         <Logo v-if="showLogo" />
@@ -16,13 +15,12 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
-      <span class="footer__links">Sponsored by <a
-          href="//codenx.com"
-          target="blank"
-        > CodeNx </a></span>
+      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}.</span>
+      <span class="footer__links">
+        Sponsored by
+        <a href="//codenx.com" target="blank">CodeNx</a>
+      </span>
     </footer>
-
   </div>
 </template>
 

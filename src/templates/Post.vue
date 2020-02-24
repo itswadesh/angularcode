@@ -1,30 +1,17 @@
 <template>
   <Layout>
     <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
+      <h1 class="post-title__text">{{ $page.post.title }}</h1>
 
       <PostMeta :post="$page.post" />
-
     </div>
-    <div
-      class="grid"
-      style="margin:0 auto;max-width: 1195px;"
-    >
+    <div class="grid" style="margin:0 auto;max-width: 1195px;">
       <div class="post content-box container">
         <div class="post__header">
-          <g-image
-            alt="Cover image"
-            v-if="$page.post.cover_image"
-            :src="$page.post.cover_image"
-          />
+          <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
         </div>
 
-        <div
-          class="post__content"
-          v-html="$page.post.content"
-        />
+        <div class="post__content" v-html="$page.post.content" />
 
         <div class="post__footer">
           <PostTags :post="$page.post" />
@@ -33,17 +20,14 @@
       <!-- <vue-disqus
         shortname="angularcode"
         :identifier="$page.post.title"
-      ></vue-disqus> -->
+      ></vue-disqus>-->
       <div>
         <RightSidebar />
       </div>
     </div>
     <div class="post-comments">
       <!-- Add comment widgets here -->
-      <vue-disqus
-        shortname="angularcode"
-        :identifier="$page.post.title"
-      ></vue-disqus>
+      <vue-disqus shortname="angularcode" :identifier="$page.post.title"></vue-disqus>
     </div>
 
     <Author class="post-author" />

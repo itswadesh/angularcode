@@ -9,11 +9,7 @@
     <!-- List posts -->
     <div class="fx center">
       <div class="posts">
-        <PostCard
-          v-for="edge in $page.posts.edges"
-          :key="edge.node.id"
-          :post="edge.node"
-        />
+        <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
       </div>
       <!-- <RightSidebar /> -->
     </div>

@@ -1,5 +1,5 @@
 {
-  "name": "gridsome",
+  "name": "angularcode",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -17,7 +17,6 @@
     "@gridsome/remark-prismjs": "^0.3.0",
     "@noxify/gridsome-plugin-remark-embed": "^1.1.5",
     "gridsome-plugin-pwa": "^0.0.13",
-    "gridsome-plugin-remark-prismjs-all": "^0.3.2",
     "gridsome-plugin-rss": "^1.2.0",
     "vue-disqus": "^3.0.5"
   },

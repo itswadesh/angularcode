@@ -35,7 +35,10 @@ export default {
 <template>
   <div class="rightside">
     <div class="subscription-box">
-      <div>Subscribe my updates via <b>Email </b></div>
+      <div>
+        Subscribe my updates via
+        <b>Email</b>
+      </div>
       <div>
         <form
           name="subscribers"
@@ -47,7 +50,10 @@ export default {
         >
           <input type="hidden" name="form-name" value="subscribers" />
           <p hidden>
-            <label> Don’t fill this out: <input name="bot-field" /> </label>
+            <label>
+              Don’t fill this out:
+              <input name="bot-field" />
+            </label>
           </p>
           <div class="sender-info fx">
             <input
@@ -57,9 +63,7 @@ export default {
               name="email"
               v-model="formData.email"
             />
-            <button class="button green" name="subscribe" type="submit">
-              Subscribe
-            </button>
+            <button class="button green" name="subscribe" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
@@ -122,7 +126,7 @@ export default {
         border="0"
         alt=""
         style="border:none !important; margin:0px !important;"
-      /> -->
+      />-->
       <!-- <form
           action="https://feedburner.google.com/fb/a/mailverify"
           method="post"
@@ -145,7 +149,7 @@ export default {
             class="button green"
             name="sign up"
             type="submit"
-          >Subscribe</button></form> -->
+      >Subscribe</button></form>-->
       <!-- </div> -->
       <!-- <div class="marginfive">
         <div>
@@ -160,7 +164,7 @@ export default {
               width="88"
             ></a>
         </div>
-      </div> -->
+      </div>-->
       <div class="clearboth"></div>
     </div>
     <iframe
@@ -181,20 +185,16 @@ export default {
       style="border:none;overflow:hidden"
       scrolling="no"
       frameborder="0"
-      allowTransparency="true"
+      allowtransparency="true"
       allow="encrypted-media"
     ></iframe>
     <a target="_blank" href="//1.envato.market/QLoLa">
-      <img src="https://s3.envato.com/files/236941986/banner.png" alt="" />
+      <img src="https://s3.envato.com/files/236941986/banner.png" alt />
     </a>
     <div class="side_box vcard">
       <h3>Most Popular Posts</h3>
       <ul class="section" id="addsections7">
-        <li
-          v-for="edge in $static.posts.edges"
-          :key="edge.node.id"
-          :post="edge.node"
-        >
+        <li v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node">
           <a :href="edge.node.path">{{ edge.node.title }}</a>
         </li>
       </ul>
@@ -220,8 +220,7 @@ export default {
           ad-slot="5568432357"
           ad-style="display:block !important;"
           ad-format="auto"
-        >
-        </Adsense>
+        ></Adsense>
       </div>
       <div class="spacer he1"></div>
     </div>
@@ -278,7 +277,7 @@ export default {
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe> -->
+    ></iframe>-->
     <!-- <div class="mr-25 card pk-4">
       <a
         href="https://www.youtube.com/watch?v=pKhGc993kz4&amp;rel=0"
@@ -296,22 +295,13 @@ export default {
         <p class="card-para">Arialshop - The progressive ecommerce app</p>
       </div>
 
-    </div> -->
+    </div>-->
   </div>
-  <!-- tags: allTag {
-      edges{
-          node{
-              id,
-              title,
-              path
-          }
-      }
-  } -->
 </template>
 
 <static-query>
 query {
-  posts: Posts {
+  posts: allPost {
     edges {
       node {
         id
@@ -319,9 +309,19 @@ query {
         path
       }
     }
+  },
+  tags: allTag {
+    edges{
+        node{
+            id,
+            title,
+            path
+        }
+    }
   }
 }
 </static-query>
+
 <style>
 iframe {
   margin-bottom: 20px;

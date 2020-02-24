@@ -8,11 +8,15 @@ public_folder: "/uploads"
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "posts"
+    folder: "content/posts"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
+      - {label: "Title", name: "title",  widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }

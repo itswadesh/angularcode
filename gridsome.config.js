@@ -1,26 +1,31 @@
+// This is where project configuration and plugin options are located.
+// Learn more: https://gridsome.org/docs/config
+
+// Changes here requires a server restart.
+// To restart press CTRL + C in terminal and run `gridsome develop`
+
 module.exports = {
-  siteName: "Gridsome",
-  transformers: {
-    remark: {
-      externalLinksTarget: "_blank",
-      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-      anchorClassName: "icon icon-link",
-      plugins: [
-        // ...global plugins
-      ]
-    }
+  siteName: 'Angularcode',
+  siteDescription: 'Simple web projects using latest technology',
+
+  templates: {
+    Post: '/:title',
+    Tag: '/tag/:id'
   },
 
   plugins: [
     {
-      use: "@gridsome/source-filesystem",
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
       options: {
-        path: "posts/**/*.md",
-        typeName: "Post",
-        remark: {
-          plugins: [
-            // ...local plugins
-          ]
+        typeName: 'Post',
+        path: 'content/posts/*.md',
+        refs: {
+          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
         }
       }
     },
@@ -30,5 +35,17 @@ module.exports = {
         publicPath: `/admin`
       }
     }
-  ]
-};
+  ],
+
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  }
+}
