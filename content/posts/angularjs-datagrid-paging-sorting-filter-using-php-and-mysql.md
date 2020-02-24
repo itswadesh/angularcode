@@ -4,7 +4,7 @@ date: 2019-07-25
 published: true
 tags: ['datagrid', 'php', 'mysql', 'angularjs', 'crud']
 series: false
-cover_image: ./images/datagrid.jpg
+cover_image: /uploads/datagrid.jpg
 canonical_url: false
 description: "This tutorial explains how to create a datagrid similar to ASP.NET gridview with client side paging, searching and sorting functionality using AngularJS, PHP, MySQL"
 ---

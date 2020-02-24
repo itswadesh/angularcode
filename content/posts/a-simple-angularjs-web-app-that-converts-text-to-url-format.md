@@ -4,7 +4,7 @@ date: 2019-05-29
 published: true
 tags: ['url', 'angularjs']
 series: false
-cover_image: ./images/angularjs-filter-text-to-url.jpg
+cover_image: /uploads/angularjs-filter-text-to-url.jpg
 canonical_url: false
 description: "We are going to create a very simple yet powerful web app using AngularJS from Google. Our app will take any input and will convert it into URL format instantly"
 ---

@@ -4,7 +4,7 @@ date: 2020-01-12
 published: true
 tags: ['zeit', 'microservice', 'serverless', 'nodejs', 'angularjs', 'mongodb', 'appointment booking']
 series: false
-cover_image: ./images/appointment-booking.png
+cover_image: /uploads/appointment-booking.png
 canonical_url: false
 description: "In this tutorial, we will create a simple, real and single page Appointment Booking web application using Javascript Fullstack which can also be used as an Event Scheduler."
 ---

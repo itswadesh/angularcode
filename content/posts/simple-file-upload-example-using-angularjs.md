@@ -4,7 +4,7 @@ date: 2019-08-08
 published: true
 tags: ['pdf', 'php', 'mysql']
 series: false
-cover_image: ./images/simple-file-uploader-using-angularjs.png
+cover_image: /uploads/simple-file-uploader-using-angularjs.png
 canonical_url: false
 description: "In this tutorial we will create an AngularJS web app that will upload the user selected file to server using nodejs. To achieve this we will use the multer node module."
 ---

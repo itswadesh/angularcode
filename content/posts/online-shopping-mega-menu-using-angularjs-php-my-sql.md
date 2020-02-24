@@ -4,7 +4,7 @@ date: 2019-07-10
 published: true
 tags: ['rest', 'nodejs', 'angularjs']
 series: false
-cover_image: ./images/rest.png
+cover_image: /uploads/rest.png
 canonical_url: false
 description: "We will create E-Commerce megamenu to display all the available category of products using AngularJS"
 ---

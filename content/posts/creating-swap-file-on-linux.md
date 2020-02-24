@@ -4,7 +4,7 @@ date: 2015-12-18
 published: true
 tags: ['ubuntu', 'centos', 'linux']
 series: false
-cover_image: ./images/angularcode-swap-file-linux.png
+cover_image: /uploads/angularcode-swap-file-linux.png
 canonical_url: false
 description: "There are the steps to create a swap file which will act as RAM when sufficient space not available in RAM"
 ---

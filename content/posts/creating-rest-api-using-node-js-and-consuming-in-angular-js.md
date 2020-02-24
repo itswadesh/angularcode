@@ -4,7 +4,7 @@ date: 2019-08-08
 published: true
 tags: ['rest', 'nodejs', 'angularjs']
 series: false
-cover_image: ./images/rest.png
+cover_image: /uploads/rest.png
 canonical_url: false
 description: "We will create a simple inventory manager app which will communicate to database"
 ---

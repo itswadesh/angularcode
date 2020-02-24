@@ -4,7 +4,7 @@ date: 2019-08-15
 published: true
 tags: ['rest', 'php', 'mysql', 'angularjs', 'crud']
 series: false
-cover_image: ./images/crud-using-restful-webservice-with-angularjs.jpg
+cover_image: /uploads/crud-using-restful-webservice-with-angularjs.jpg
 canonical_url: false
 description: "In this tutorial we will create a RESTful web service using PHP. Also we will create a Customer Manager Application using AngularJS as front end"
 ---

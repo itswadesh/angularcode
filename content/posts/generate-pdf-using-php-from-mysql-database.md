@@ -4,7 +4,7 @@ date: 2019-08-08
 published: true
 tags: ['pdf', 'php', 'mysql']
 series: false
-cover_image: ./images/generate-pdf-from-mysql-database.png
+cover_image: /uploads/generate-pdf-from-mysql-database.png
 canonical_url: false
 description: "We will discuss, how to generate a simple PDF file from your MySQL database using PHP. For this purpose we will use the popular PHP library FPDF"
 ---

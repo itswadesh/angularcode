@@ -4,7 +4,7 @@ date: 2019-08-05
 published: true
 tags: ['stackoverflow', 'php', 'mysql', 'angularjs']
 series: false
-cover_image: ./images/voting.png
+cover_image: /uploads/voting.png
 canonical_url: false
 description: "We will try to create a simple voting system app similar to StackOverflow.com using AngularJS, PHP and MySQL"
 ---

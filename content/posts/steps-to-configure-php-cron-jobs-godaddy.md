@@ -4,7 +4,7 @@ date: 2019-06-06
 published: true
 tags: ['godaddy', 'php', 'cron jobs']
 series: false
-cover_image: ./images/setup-php-cron-jobs-at-godaddy.png
+cover_image: /uploads/setup-php-cron-jobs-at-godaddy.png
 canonical_url: false
 description: "You need to use the following path settings for different versions of PHP"
 ---

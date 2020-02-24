@@ -4,7 +4,7 @@ date: 2019-09-15
 published: true
 tags: ['nodejs', 'amazon ec2', 'pm2', 'mongodb']
 series: false
-cover_image: ./images/configure-amacon-ec2-for-nodejs-app-deployment.png
+cover_image: /uploads/configure-amacon-ec2-for-nodejs-app-deployment.png
 canonical_url: false
 description: "In this tutorial I will show you, how to configure Amazon EC2 server for an NodeJS app"
 ---

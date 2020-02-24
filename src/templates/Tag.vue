@@ -1,9 +1,11 @@
 <template>
   <Layout>
     <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
-
-    <div class="posts">
-      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
+    <div class="fx justify-center flex-wrap">
+      <div class="posts">
+        <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node" />
+      </div>
+      <RightSidebar />
     </div>
   </Layout>
 </template>
@@ -33,11 +35,13 @@ query Tag ($id: ID!) {
 <script>
 import Author from "~/components/Author.vue";
 import PostCard from "~/components/PostCard.vue";
+import RightSidebar from "~/components/RightSidebar.vue";
 
 export default {
   components: {
     Author,
-    PostCard
+    PostCard,
+    RightSidebar
   },
   metaInfo() {
     return {
@@ -58,5 +62,11 @@ export default {
 </script>
 
 <style lang="scss">
+.justify-center {
+  justify-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
 </style>
 

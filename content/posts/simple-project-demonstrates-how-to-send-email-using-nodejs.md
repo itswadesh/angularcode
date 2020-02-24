@@ -4,7 +4,7 @@ date: 2019-08-06
 published: true
 tags: ['nodejs', 'email']
 series: false
-cover_image: ./images/send-email-using-angularjs-nodejs.png
+cover_image: /uploads/send-email-using-angularjs-nodejs.png
 canonical_url: false
 description: "Scenario-1: We wish our users to be able to communicate to the admin, author, managers of our website."
 ---

@@ -15,8 +15,8 @@ collections:
       - {label: "Title", name: "title",  widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Published", name: "published", widget: "boolean", default: true}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown" }

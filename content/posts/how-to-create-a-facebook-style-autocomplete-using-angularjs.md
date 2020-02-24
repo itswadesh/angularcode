@@ -4,7 +4,7 @@ date: 2019-06-30
 published: true
 tags: ['facebook', 'autocomplete', 'mysql', 'angularjs']
 series: false
-cover_image: ./images/facebook-type-autocomplete-using-php-mysql-angularjs.jpg
+cover_image: /uploads/facebook-type-autocomplete-using-php-mysql-angularjs.jpg
 canonical_url: false
 description: "This tutorial explains how to show autocomplete results for a textbox input using AngularJS, PHP and MySQL with the help of Angular UI directive."
 ---

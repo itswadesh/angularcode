@@ -4,7 +4,7 @@ date: 2019-10-09
 published: true
 tags: ['php', 'pdf', 'email']
 series: false
-cover_image: ./images/send-email-with-pdf-attachment-using-php.png
+cover_image: /uploads/send-email-with-pdf-attachment-using-php.png
 canonical_url: false
 description: "In this tutorial we will query the MySQL database to get the updated data from our table and email the data to the desired email as PDF attachment."
 ---

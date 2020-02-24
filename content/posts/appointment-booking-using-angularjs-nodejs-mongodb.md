@@ -4,7 +4,7 @@ date: 2019-10-20
 published: true
 tags: ['nodejs', 'angularjs', 'mongodb', 'appointment booking']
 series: false
-cover_image: ./images/simple-appointment-booking-using-angularjs.png
+cover_image: /uploads/simple-appointment-booking-using-angularjs.png
 canonical_url: false
 description: "In this tutorial, we will create a simple, real and single page Appointment Booking web application using Javascript Fullstack"
 ---

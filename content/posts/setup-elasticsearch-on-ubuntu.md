@@ -4,7 +4,7 @@ date: 2019-10-29
 published: true
 tags: ['elastic search', 'ubuntu']
 series: false
-cover_image: ./images/elasticsearch.png
+cover_image: /uploads/elasticsearch.png
 canonical_url: false
 description: "Here are complete steps to get started with elasticsearch on Ubuntu machine"
 ---

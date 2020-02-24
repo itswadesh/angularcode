@@ -4,7 +4,7 @@ date: 2019-09-31
 published: true
 tags: ['facebook', 'autocomplete', 'mysql', 'angularjs']
 series: false
-cover_image: ./images/task-manager.jpg
+cover_image: /uploads/task-manager.jpg
 canonical_url: false
 description: "This tutorial explains how to create a simple Task Manager application using AngularJS. Here I used PHP for server side communication and MySQL for database."
 ---

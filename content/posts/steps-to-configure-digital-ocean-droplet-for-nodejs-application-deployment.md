@@ -4,7 +4,7 @@ date: 2019-11-07
 published: true
 tags: ['nodejs', 'digital ocean', 'pm2', 'nginx']
 series: false
-cover_image: ./images/do.png
+cover_image: /uploads/do.png
 canonical_url: false
 description: "How to setup and deploy nodejs application for production to ubuntu cloud.
 We will be using Digital Ocean Cloud droplets for this deployment."

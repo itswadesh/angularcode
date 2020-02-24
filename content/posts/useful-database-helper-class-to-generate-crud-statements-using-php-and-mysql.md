@@ -4,7 +4,7 @@ date: 2019-07-12
 published: true
 tags: ['rest', 'php', 'angularjs', 'crud']
 series: false
-cover_image: ./images/crud-using-restful-webservice-with-angularjs.png
+cover_image: /uploads/crud-using-restful-webservice-with-angularjs.png
 canonical_url: false
 description: "This database helper class generate the CRUD statements dynamically and always output the response in a standard format. Hence reducing the recurring tasks load on programmer"
 ---

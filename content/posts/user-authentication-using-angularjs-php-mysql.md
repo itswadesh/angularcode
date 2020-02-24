@@ -4,7 +4,7 @@ date: 2019-08-25
 published: true
 tags: ['rest', 'php', 'angularjs', 'crud']
 series: false
-cover_image: ./images/angular_auth.jpg
+cover_image: /uploads/angular_auth.jpg
 canonical_url: false
 description: "Mixing PHP, MySQL, and AngularJS with Sessions and User Login, Logout, Account Creation would be awesome"
 ---

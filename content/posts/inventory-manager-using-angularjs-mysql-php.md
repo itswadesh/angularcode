@@ -4,7 +4,7 @@ date: 2019-09-15
 published: true
 tags: ['rest', 'php', 'angularjs', 'crud']
 series: false
-cover_image: ./images/product-manger.jpg
+cover_image: /uploads/product-manger.jpg
 canonical_url: false
 description: "We will add, update, delete, activate, deactivate products from inventory. Some AngularJS directives will make our job easy"
 ---
