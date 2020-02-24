@@ -5,7 +5,8 @@ published: false
 excerpt: exce
 description: desc
 tags:
-  title: nodejs
+  - nodejs
+  - vuejs
 cover_image: /uploads/vultr.webp
 ---
 content
