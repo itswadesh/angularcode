@@ -6,5 +6,6 @@ excerpt: exce
 description: desc
 tags:
   title: nodejs
+cover_image: /uploads/vultr.webp
 ---
 content
