@@ -3,7 +3,7 @@ title: Configure Vultr for Nodejs Deployment
 excerpt: >-
   How to setup and deploy nodejs application for production to ubuntu cloud. We
   will be using Vultr for this deployment.
-date: 2020-02-24T11:20:09.190Z
+date: 2020-02-24T11:35:28.976Z
 published: true
 tags:
   - nodejs
