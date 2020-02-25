@@ -1,5 +1,5 @@
 <script>
-import Adsense from "~/components/Adsense.vue";
+// import Adsense from "~/components/Adsense.vue";
 export default {
   data() {
     return {
@@ -7,7 +7,7 @@ export default {
     };
   },
   components: {
-    Adsense
+    // Adsense
   },
   methods: {
     encode(data) {
@@ -63,7 +63,9 @@ export default {
               name="email"
               v-model="formData.email"
             />
-            <button class="button green" name="subscribe" type="submit">Subscribe</button>
+            <button class="button green" name="subscribe" type="submit">
+              Subscribe
+            </button>
           </div>
         </form>
       </div>
@@ -194,7 +196,11 @@ export default {
     <div class="side_box vcard">
       <h3>Most Popular Posts</h3>
       <ul class="section" id="addsections7">
-        <li v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node">
+        <li
+          v-for="edge in $static.posts.edges"
+          :key="edge.node.id"
+          :post="edge.node"
+        >
           <a :href="edge.node.path">{{ edge.node.title }}</a>
         </li>
       </ul>
