@@ -140,6 +140,6 @@ In AngularJS, it is always recommended to manipulate the DOM using directives on
 
 <hr/>
 
-Are you looking for a job in the field of AngularJS? Find <a href="https://jooble.org/jobs-web-application-developer" rel="nofollow" target="blank">
+Are you looking for a job in the field of AngularJS? Find <a href="https://jooble.org/jobs-web-application-developer" target="blank">
 Web application developer jobs
 </a> quickly

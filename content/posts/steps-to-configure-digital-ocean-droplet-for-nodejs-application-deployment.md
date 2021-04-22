@@ -28,9 +28,9 @@ Here are the list of steps that we need, in order to complete the setup process
 10. <a href="#https">Enable https</a>
 
 <h1 id="create"> Create and start a droplet </h1>
-Head to <a href="https://m.do.co/c/5d0f51f2d693">https://www.digitalocean.com</a> and create a Digital Ocean account.
+Head to <a href="https://m.do.co/c/5d0f51f2d693" rel="nofollow">https://www.digitalocean.com</a> and create a Digital Ocean account.
 
-Login to <a href="https://m.do.co/c/5d0f51f2d693">Digital Ocean</a> panel and create the droplet. for a nodejs project it is recommended to go for 2GB RAM droplet
+Login to <a href="https://m.do.co/c/5d0f51f2d693" rel="nofollow">Digital Ocean</a> panel and create the droplet. for a nodejs project it is recommended to go for 2GB RAM droplet
 
 Choose a region closer to your target audience location
 Select UBUNTU 18.x as the operating system
@@ -38,14 +38,14 @@ Select UBUNTU 18.x as the operating system
 <h1 id="login"> Login to that droplet </h1>
 The droplet creation will take somewhere between 1–3 minutes. Upon completion, it will be assigned with an IP Address
 
-Option-1 (Using password)
----------
+## Option-1 (Using password)
+
 Copy that IP Address and in your command prompt type `ssh root@YOUR_IP_ADDRESS`
 e.g. `ssh root@100.100.0.100`
 Enter the password and you must be logged in as root
 
-Option-2 (Using a public/private key pair)
----------
+## Option-2 (Using a public/private key pair)
+
 e.g. `ssh -i D:/ssh/key-file.ppk root@100.100.0.100`
 <em>key-file.ppk</em> is your private key
 
@@ -99,7 +99,8 @@ sudo service mongod restart
 <h1 id="nginx">  Setup nginx and build-essentials </h1>
 Why nginx?
 
-We will use nginx as a reverse proxy as well as a server to serve static files. This gives us advantage like 
+We will use nginx as a reverse proxy as well as a server to serve static files. This gives us advantage like
+
 - https
 - caching
 - abstraction
@@ -113,6 +114,7 @@ sudo service nginx restart
 ```
 
 Install build-essentials
+
 ```
 sudo apt-get install build-essential -y
 ```
@@ -148,11 +150,13 @@ sudo certbot --nginx certonly
 ```
 
 The installed certificate is valid for 6 months. We need to setup auto renewal of the https certificate through cron job
+
 ```
 crontab -e
 ```
 
 Enter the following at the end
+
 ```
 @monthly /home/ubuntu/letsencrypt/letsencrypt-auto certonly --reinstall --nginx -d www.litekart.in && sudo service nginx reload
 ```
