@@ -1,17 +1,18 @@
 ---
 title: Complete steps to configure elasticsearch on Ubuntu
-date: 2019-10-29
+date: 2021-02-17
 published: true
 tags: ['elastic search', 'ubuntu']
 series: false
-cover_image: /uploads/elasticsearch.png
+cover_image: ./images/elasticsearch.png
 canonical_url: false
-description: "Here are complete steps to get started with elasticsearch on Ubuntu machine"
+description: 'Here are complete steps to get started with elasticsearch on Ubuntu machine'
 ---
 
 Here are complete steps to get started with elasticsearch on Ubuntu machine
 
 ## Step-1: Install Java
+
 ```
 sudo apt-get update
 sudo apt-get install oracle-java11-installer-local
@@ -19,16 +20,20 @@ sudo apt-get install oracle-java11-set-default-local
 ```
 
 To uninstall Java
+
 ```
 sudo apt-get purge oracle-java11-set-default-local
 ```
 
 Check if java installed properly
+
 ```
 java -version
 echo $JAVA_HOME
 ```
+
 ## Step-2: Install elastic search
+
 ```
 sudo apt-get install apt-transport-https
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
@@ -38,26 +43,36 @@ sudo apt-get install elasticsearch
 ```
 
 ## Step-3: Configure elasticsearch
+
 ```
 sudo nano /etc/elasticsearch/elasticsearch.yml
 ```
 
 Change the fllowing
+
 ```
-network.host: 0.0.0.0
+cluster.initial_master_nodes: node-1
+network.host: ["0.0.0.0, 127.0.0.1,[::1]"]
+network.bind_host: 0.0.0.0
+network.publish_host: 0.0.0.0
+http.host: 0.0.0.0
 ```
 
 ## Step-4: Setup JVM options based on available RAM
+
 ```
 nano /etc/elasticsearch/jvm.options
 ```
+
 Change the following values
+
 ```
 -Xms256m
 -Xmx256m
 ```
 
 ## Step-5: Start elasticsearch service
+
 ```
 service elasticsearch start
 service elasticsearch status
@@ -70,6 +85,7 @@ curl -X GET "http://localhost:9200/?pretty"
 ```
 
 You should get the following output
+
 ```
 {
     "name": "litekart",
@@ -88,4 +104,19 @@ You should get the following output
     },
     "tagline": "You Know, for Search"
 }
+```
+
+### Setup password to secure elastic search instance
+
+- Verify that the xpack.security.enabled setting is true on each node in your cluster.
+
+  -- sudo nano /etc/elasticsearch/elasticsearch.yml
+
+```
+xpack.security.enabled
+```
+
+```
+cd /usr/share/elasticsearch
+./bin/elasticsearch-setup-passwords
 ```
