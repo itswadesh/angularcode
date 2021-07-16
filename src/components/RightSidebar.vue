@@ -3,8 +3,8 @@
 export default {
   data() {
     return {
-      formData: {}
-    };
+      formData: {},
+    }
   },
   components: {
     // Adsense
@@ -13,24 +13,24 @@ export default {
     encode(data) {
       return Object.keys(data)
         .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+          (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
         )
-        .join("&");
+        .join('&')
     },
     handleSubmit(e) {
-      fetch("https://api.litekart.in/api/email/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      fetch('https://api.litekart.in/api/email/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
+          'form-name': e.target.getAttribute('name'),
+          ...this.formData,
+        }),
       })
-        .then(() => this.$router.push("/success"))
-        .catch(error => alert(error));
-    }
-  }
-};
+        .then(() => this.$router.push('/success'))
+        .catch((error) => alert(error))
+    },
+  },
+}
 </script>
 <template>
   <div class="rightside">
@@ -181,7 +181,7 @@ export default {
       data-screen-name="itswadesh"
     ></iframe>
     <iframe
-      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcodenx2%2F&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=169430647069214"
+      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcodenx%2F&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=169430647069214"
       width="340"
       height="220"
       style="border:none;overflow:hidden"
