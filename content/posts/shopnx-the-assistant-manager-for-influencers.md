@@ -48,14 +48,17 @@ The above link also contains a link back to your video. It will help track all p
 ## AUTHOR PROFILE
 
 A portfolio for each publisher is created for improved visibility
-<g-image src="~/uploads/shopnx-author-profile.jpg" all="" width="500"/>
+
+<g-image src="~/assets/images/shopnx-author-profile.jpg" all="" width="500"/>
 
 ## INFLUENCERS
 
 List of all influencers and their profile, recommendations
-<g-image src="~/uploads/shopnx-influencers.jpg" all="" width="500"/>
+
+<g-image src="~/assets/images/shopnx-influencers.jpg" all="" width="500"/>
 
 ## SHOPNX COLLECTIONS
 
 Contains searchable list of latest posts from fashion and technology category
-<g-image src="~/uploads/shopnx-collections.jpg" all="" width="500"/>
+
+<g-image src="~/assets/images/shopnx-collections.jpg" all="" width="500"/>
