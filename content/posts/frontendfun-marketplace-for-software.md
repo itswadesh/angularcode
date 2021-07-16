@@ -16,7 +16,7 @@ description: 'About frontendfun, how it works, what problem it solves'
 
 #### Frontendfun is a marketplace for software projects, ready to use scripts with 0 commission or brokerage.
 
-    It uses cutting edge technology behind the scene to make authoring and purchasing easy. Enter your github project url and that’s it. With the help of AI it will automatically add the project into the review quete. 1st it will go through an automated review process through AI and again our experts will review the project. Upon clearing it will be published to the software marketplace as well as create your profile. All github releases will be automatically detected and pushed to the marketplace without you ever worrying about updates. The complete review process can range from 2minute - 2hours depending on the software submitted.
+It uses cutting edge technology behind the scene to make authoring and purchasing easy. Enter your github project url and that’s it. With the help of AI it will automatically add the project into the review quete. 1st it will go through an automated review process through AI and again our experts will review the project. Upon clearing it will be published to the software marketplace as well as create your profile. All github releases will be automatically detected and pushed to the marketplace without you ever worrying about updates. The complete review process can range from 2minute - 2hours depending on the software submitted.
 
 Each github release is auto submitted for 2-step quality check. Hence customers always get the latest version of software, even if it's a small bug fix or feature improvement.
 
@@ -28,7 +28,7 @@ The variety of free projects includes Vue, React, Android, Flutter, React Native
 
 ## Finding and buying items
 
-    There are lots of ways to find the items you wish
+There are lots of ways to find the items you wish
 
 - Tags list - Browse Frontendfuns extensive tags list to search for a keyword
 - Keyword search - At the top nav bar you can type about any software you require and it can be found immediately
