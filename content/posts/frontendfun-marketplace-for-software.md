@@ -1,5 +1,5 @@
 ---
-title: Frontendfun Marketplace for Software Projects
+title: Frontendfun marketplace for software projects
 date: 2021-07-16
 published: true
 tags: ['software marketplace', 'buysell scripts', 'free softwares']

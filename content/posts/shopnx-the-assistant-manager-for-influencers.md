@@ -1,5 +1,5 @@
 ---
-title: Frontendfun Marketplace for Software Projects
+title: ShopNx - The assistant manager for influencers
 date: 2021-07-16
 published: true
 tags: ['software marketplace', 'buysell scripts', 'free softwares']
@@ -11,7 +11,7 @@ description: 'About Shopnx program, how it works, what problem it solves'
 
 # About frontendfun
 
-> How it works, what problem it solves
+> Create blog post from your youtube video with just 1 click
 > https://www.shopnx.in/
 
 #### ShopNx is a helper program for influencers
