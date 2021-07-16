@@ -9,7 +9,7 @@ canonical_url: false
 description: 'About Shopnx program, how it works, what problem it solves'
 ---
 
-# About frontendfun
+# About ShopNx
 
 > Create blog post from your youtube video with just 1 click
 > https://www.shopnx.in/
