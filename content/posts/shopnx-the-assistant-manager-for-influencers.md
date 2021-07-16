@@ -49,7 +49,7 @@ The above link also contains a link back to your video. It will help track all p
 
 A portfolio for each publisher is created for improved visibility
 
-![](./uploads/shopnx-author-profile.jpg)
+![](/uploads/shopnx-author-profile.jpg)
 
 <!-- <g-image src="~/" all="" width="500"/> -->
 
@@ -57,7 +57,7 @@ A portfolio for each publisher is created for improved visibility
 
 List of all influencers and their profile, recommendations
 
-![](./uploads/shopnx-influencers.jpg)
+![](/uploads/shopnx-influencers.jpg)
 
 <!-- <g-image src="~/uploads/shopnx-influencers.jpg" all="" width="500"/> -->
 
@@ -65,6 +65,6 @@ List of all influencers and their profile, recommendations
 
 Contains searchable list of latest posts from fashion and technology category
 
-![](./uploads/shopnx-collections.jpg)
+![](/uploads/shopnx-collections.jpg)
 
 <!-- <g-image src="~/uploads/shopnx-collections.jpg" all="" width="500"/> -->
